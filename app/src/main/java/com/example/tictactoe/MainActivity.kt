@@ -120,7 +120,7 @@ class MainActivity : AppCompatActivity() {
         var emptycells= ArrayList<Int>()
         for(cellid in 1..9)
         {
-            if(!player1.contains(cellid) || player2.contains(cellid))
+            if(!(player1.contains(cellid) || player2.contains(cellid)))
             {
                 emptycells.add(cellid)
             }

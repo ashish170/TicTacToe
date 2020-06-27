@@ -125,6 +125,11 @@ class MainActivity : AppCompatActivity() {
                 emptycells.add(cellid)
             }
         }
+        
+        if(emptyCells.size==0)
+        {
+            restartGame()
+        }
         val r= Random()
         val ranIndex= r.nextInt(emptycells.size)
         val cellid=emptycells[ranIndex]
